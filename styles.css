@@ -1,0 +1,338 @@
+body {
+  background-color: #f6f9fc;
+}
+
+/* #### Header #### */
+/* .navigation-bar */
+.header {
+  background: linear-gradient(-90deg,#02203c,#001528);
+}
+
+.navigation-bar {
+  position: relative;
+}
+
+nav {
+  background-color: inherit;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  transition: top 0.5s;
+}
+
+.brand-logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 300;
+  font-size: 36px;
+  color: #fff;
+}
+
+.container ul li:hover {
+  background-color: inherit;
+}
+
+.sidenav {
+  background-color: #02203c;
+}
+
+.nav-items {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.sidenav-trigger {
+  /* position: fixed; */
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  /* z-index: 300; */
+}
+
+.menu {
+  color: #039be5;
+}
+
+.upward {
+  color: #fff;
+  display: inline-block;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.btn-contact .btn {
+  background-color: inherit;
+  border: 2px solid #3399CC;
+}
+
+/* ..Header content section.. */
+.content {
+  padding: 200px 0 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .cnt-h1 {
+  font-family: 'Jura', sans-serif;
+  margin: 0 0 30px;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.content .cnt-h1 .name {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.content .cnt-h5 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.btn {
+  margin: 30px 10px 0;
+  border-radius: 4px;
+}
+
+.btn-C {
+  background-color: inherit;
+  border: 2px solid #3399CC;
+}
+
+.btn-C:hover {
+  background-color: #3399CC;
+}
+
+.btn-W {
+  background-color: #3399CC;
+  border: 2px solid #3399CC;
+}
+
+.btn-W:hover {
+  background-color: #039be5;
+  border: 2px solid #039be5;
+}
+
+
+/* ### My Skills Section ### */
+.skills {
+  padding: 140px 0;
+}
+
+/* ... skills header */
+.skills-heading {
+  text-align: center;
+  margin-bottom: 70px;
+  font-family: 'Jura', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #001528;
+}
+
+/* ... Content of skill */
+.skills-panel {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  margin: 30px 15%;
+}
+
+.skills-panel .done-icon,
+.skills-panel .done-topic {
+  margin: 0;
+  color: #02203c;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.skills-panel .done-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+/* ... Left column */
+
+.panel-L {
+  border-radius: 6px 4px 4px 6px;
+}
+
+.panel-V-L {
+  display: inline-block;
+  border-left: 6px solid #001528;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+/* ... Right column */
+
+.panel-R {
+  text-align: center;
+  flex-direction: row-reverse;
+  border-radius: 4px 6px 6px 4px;
+}
+
+.panel-V-R {
+  display: inline-block;
+  border-right: 6px solid #001528;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+/* ### About Me Section ### */
+
+.about {
+  background: linear-gradient(-90deg,#02203c,#001528);
+  padding: 140px 0;
+  color: #fff;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 70px;
+  font-family: 'Jura', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.about-content {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 20px;
+  margin: 0 20%;
+}
+
+.about-content-1 span {
+  font-size: 24px;
+  color: #cbe3ee;
+}
+
+/* ### My Works section ### */
+.works {
+  padding: 140px 0;
+}
+
+/* ... works header */
+/* TODO: later */
+.works-heading {
+  text-align: center;
+  margin-bottom: 70px;
+  font-family: 'Jura', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.works-heading + div {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* ### contact section ### */
+
+.contact {
+  padding: 140px 0;
+  text-align: center;
+  color: #001528;
+}
+
+.contact-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 6px 0 0 6px;
+  height: 80px;
+}
+
+.contact-panel .choice-1,
+.contact-panel .choice-2 {
+  display: none;
+}
+
+.contact-panel p,
+.contact-panel .special-char {
+  margin: 0 5px;
+}
+
+.options {
+  display: flex;
+}
+
+.contact-option {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-option:hover {
+  cursor: pointer;
+}
+
+.contact-option:nth-child(1) {
+  margin-right: 10px;
+}
+
+.contact-option:nth-child(2) {
+  margin-left: 10px;
+}
+
+.special-char {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-panel, .contact-option {
+  color: #445d6e;
+  font-weight: 400;
+  font-size: 20px;
+  box-shadow: 0 2px 4px rgba(50,50,93,.1);
+  border-radius: 4px;
+}
+
+.contact-option {
+  transition: all 0.3s;
+}
+
+.contact-option:hover {
+  box-shadow: 0 4px 8px rgba(50,50,93,.1);
+  transform: translateY(-2px);
+}
+
+/* ### footer-section ### */
+.footer-section {
+  position: relative;
+  height: 140px;
+}
+
+.github-link {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+}
